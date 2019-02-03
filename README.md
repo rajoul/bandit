@@ -93,7 +93,28 @@ cat readme   >>> bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 >ssh -i sshkey.private bandit14@localhost
 > cat /etc/bandit_pass/bandit14 >>> bandit14: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 ```
-
+# bandit15
+```
+>ls 
+> echo '4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e' | nc localhost 30000 >>> bandit15: BfMYroe26WYalil77FoDi9qh59eK5xNr
+```
+# bandit16
+```
+>ls 
+> echo 'BfMYroe26WYalil77FoDi9qh59eK5xNr'| openssl s_client -connect localhost:30001 >>> bandit16: cluFn7wTiGryunymYOu4RcffSxQluehd
+```
+# bandit17
+```
+>ls 
+>nmap localhost -p 31000-32000
+>echo 'cluFn7wTiGryunymYOu4RcffSxQluehd' |openssl s_client -connect localhost:31790
+>mkdir /tmp/rajoul
+>cd /tmp/rajoul
+>nano private_key.key (then copy paste the RSA priavte key)
+>chmod 700 private_key.key
+>ssh -i private_key.key bandit17@localhost
+>cat /etc/bandit_pass/bandit17 >>> bandit17: xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+```
 
 
 
