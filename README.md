@@ -25,3 +25,16 @@ cat readme   >>> bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 >file ./*   (open ASCII text file)
 >cat ./-file07 >>> bandit5: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```
+# bandit6
+```
+>ls 
+>cd inhere
+>find -type f -readable -size 1033c ! -executable
+>cat maybehere07/.file2 >>> bandit6: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+```
+# bandit7
+```
+>ls 
+>find / -type f -user bandit7 -group bandit6 -size 33c
+>cat /var/lib/dpkg/info/bandit7.password >>> bandit7: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+```
