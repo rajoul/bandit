@@ -87,6 +87,12 @@ cat readme   >>> bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 >gzip -d data8.gz
 >cat data6 >>> bandit13: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 ```
+# bandit14
+```
+>ls 
+>ssh -i sshkey.private bandit14@localhost
+> cat /etc/bandit_pass/bandit14 >>> bandit14: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+```
 
 
 
