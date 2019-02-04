@@ -116,6 +116,12 @@ cat readme   >>> bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 >cat /etc/bandit_pass/bandit17 >>> bandit17: xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
 ```
 
+# bandit18
+```
+>ls 
+> diff passwords.new passwords.new >>> bandit18: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+```
+
 
 
 
