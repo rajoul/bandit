@@ -121,7 +121,50 @@ cat readme   >>> bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 >ls 
 > diff passwords.new passwords.new >>> bandit18: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 ```
-
-
+# bandit20
+```
+>ls 
+> ./bandit20-do cat /etc/bandit_pass/bandit20 >>> bandit20 : GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+```
+# bandit21
+```
+>ls 
+j'ouvre une autre session puis je lance le serveur en mode ecoute: >nc -l -p 2323
+dans l'autre session :>./suconnect 2323
+>j'entre le mot de pass dans la première session
+>enfin je recois immédiatement le pass de bandit21 >>>> bandit21 : gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+```
+# bandit22
+```
+>ls 
+>cd /etc/cron.d/
+> cat cronjob_bandit22
+> cat  /usr/bin/cronjob_bandit22.sh
+>cat  /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv >>> bandit22 : Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+```
+# bandit23
+```
+>ls 
+>cd /etc/cron.d/
+> cat cronjob_bandit23
+>cat /usr/bin/cronjob_bandit23.sh
+>$(echo I am bandit23 | md5sum | cut -d ' ' -f 1) ==>>>d7387859980fe85c84d68d50eedd8598
+> cat /tmp/d7387859980fe85c84d68d50eedd8598 >>> bandit23 : jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+```
+# bandit24
+```
+>ls 
+>cd /etc/cron.d/
+> cat cronjob_bandit23
+>cat /usr/bin/cronjob_bandit23.sh
+donc je cree un fichier dans le /tmp
+>mkdir /tmp/rajoul
+>cd /tmp/rajoul
+>nano pass.sh et j'insere dans le fichier la commande suivante
+>cat /etc/bandit_pass/bandit24 > /tmp/rajoul.pass.txt
+>cp pass.sh /var/spool/bandit24
+apres quelque seconde le pass est dans pass.txt
+>cat pass.txt bandit24 : UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+```
 
 
